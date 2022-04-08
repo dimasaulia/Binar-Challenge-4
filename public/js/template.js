@@ -100,7 +100,8 @@ const carFilter = (cars) => {
   const filteredCar = cars.filter((car) => {
     if (
       new Date(car.availableAt).getTime() === filterDate.getTime() &&
-      car.capacity >= Number(penumpang.value)
+      car.capacity >= Number(penumpang.value) &&
+      car.available === true
     ) {
       return car;
     }
