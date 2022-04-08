@@ -905,7 +905,7 @@ const btn = document.getElementById("cari");
 btn.addEventListener("click", () => {
   // Validasi
   const filterDate = new Date(`${tanggal.value}T${time.value}`);
-  console.log(validateDate(filterDate));
+
   const valid = [
     validateNull(driver),
     validateNull(tanggal),
