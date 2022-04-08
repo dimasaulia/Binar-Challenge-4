@@ -86,7 +86,7 @@
                 <div class="p-2 form-item">
                     <label for="tipe" class="form-label">Tipe Driver</label>
                     <div class="input-group">
-                        <input type="text" class="form-control" id="tipe" aria-describedby="emailHelp">
+                        <input type="text" class="form-control" id="tipe" required>
                         <span class="input-group-text">
                             <img src="assets/icons/icon_arr_up.svg" alt="Panah" class="inp-arr">
                         </span>
@@ -100,8 +100,8 @@
 
                 <div class="p-2 form-item">
                     <label for="tanggal" class="form-label">Tanggal</label>
-                    <div class="input-group">
-                        <input type="date" class="form-control" id="tanggal">
+                    <div class="input-group date">
+                        <input type="date" class="form-control" id="tanggal" required>
                         <span class="input-group-text">
                             <img src="assets/icons/icon_calender.png" alt="Icon Kalender" class="inp-cal">
                         </span>
@@ -111,7 +111,7 @@
                 <div class="p-2 form-item">
                     <label for="waktu" class="form-label">Waktu Jemput/Ambil</label>
                     <div class="input-group">
-                        <input type="text" class="form-control" id="waktu" autocomplete="off">
+                        <input type="text" class="form-control" id="waktu" autocomplete="off" required>
                         <span class="input-group-text">
                             <img src="assets/icons/icon_clock.svg" alt="Icon Jam" class="clock">
                         </span>
@@ -135,7 +135,8 @@
                 <div class="p-2 form-item">
                     <label for="jumlah" class="form-label">Jumlah Penumpang</label>
                     <div class="input-group">
-                        <input type="number" class="form-control" id="jumlah" autocomplete="off" min="1" max="9">
+                        <input type="number" class="form-control" id="jumlah" autocomplete="off" min="1" max="9"
+                            required>
                         <span class="input-group-text">
                             <img src="assets/icons/icon_capacity.svg" alt="Icon Penumpang" class="inp-psg">
                         </span>
