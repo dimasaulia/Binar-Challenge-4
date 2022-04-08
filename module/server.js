@@ -23,6 +23,10 @@ class Server {
       res.setHeader("Content-Type", "text-html");
       res.writeHead(200);
       res.end(this.#getHTML("index.html"));
+    } else if (req.url === "/data") {
+      res.setHeader("Content-Type", "json");
+      res.writeHead(200);
+      res.end(data("cars.json"));
     } else if (req.url === "/cars") {
       res.setHeader("Content-Type", "text-html");
       res.writeHead(200);
